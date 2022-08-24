@@ -1,0 +1,71 @@
+:root {
+  //Paleta de color
+  --primario: #edf6f9;
+  --secundario: #ffddd2;
+  --tercero: #83c5be;
+
+  //Fuentes
+  --fuenteHeading: "PT Sans", sans-serif;
+  --fuenteParrafos: "Opens Sans", sans-serif;
+}
+
+// GENERALES
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; /* Para evitar calculadora de rems se aplica esto que nos permite definir un 1rem = 10px */
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: var(--primario); /* Color de fondo */
+  font-size: 1.6rem; /* Tamaña general de la fuente */
+  line-height: 1.5; /* Interliniado al proyecto, es el 1.5 del font size */
+}
+
+a {
+  text-decoration: none;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  box-shadow: 0px 9px 10px -4px rgba(0, 0, 0, 0.67);
+  -webkit-box-shadow: 0px 9px 10px -4px rgba(0, 0, 0, 0.67);
+  -moz-box-shadow: 0px 9px 10px -4px rgba(0, 0, 0, 0.67);
+  background-color: var(--secundario);
+
+  .sofia-grau,
+  h1 {
+    text-decoration: none;
+    margin-left: 10px;
+    color: var(--tercero);
+    font-size: 3rem;
+  }
+  .links {
+    display: flex;
+    flex-direction: row;
+    margin-right: 25px;
+
+    h2 {
+      text-decoration: none;
+      margin-left: 10px;
+      color: var(--tercero);
+    }
+
+    .obras-click {
+      cursor: pointer;
+    }
+  }
+}
+
+.categorias {
+  display: flex;
+  justify-content: space-evenly;
+}
